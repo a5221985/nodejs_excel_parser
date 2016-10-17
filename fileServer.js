@@ -19,6 +19,6 @@ var server = http.createServer(function (request, response) {
         response.writeHead(404);
         response.end('File not found');
     }
-}).listen(2000, 'localhost', function () {
-    console.log('Server started at: http://localhost:2000');
+}).listen(9090, '0.0.0.0', function () {
+    console.log('Server started at: http://0.0.0.0:9090');
 });
